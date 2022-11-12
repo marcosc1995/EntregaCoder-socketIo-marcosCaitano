@@ -1,0 +1,22 @@
+
+<h2>Productos</h2>
+
+<div class="table-responsive">
+  <table id="tabla" class="table table-dark">
+    <tr class="color-white">
+      <th>Nombre de Producto</th>
+      <th>Precio</th>
+      <th>imagen</th>
+    </tr>
+    <% arrayProductos.forEach( product) { %>
+    <tr>
+      <td><%= product.title %></td>
+      <td><%= product.price %></td>
+      <td>        
+        <img style="height: 40px;" src=" <%= product.productImg  %>  " alt="" srcset="" />
+      </td>
+    </tr>
+    <% } %>
+  </table>
+</div>
+
