@@ -63,7 +63,7 @@ function addMsj() {
   const hoy = new Date(tiempoTrans) 
   const newMsj = {
     email: email.value,
-    fecha: hoy.toUTCString(),
+    date: '',
     mensaje: mensaje.value,
   };
   return newMsj
@@ -84,7 +84,7 @@ function printMensajes(mensajes) {
 
     const msjHtml = `
   <div class="col card text-primary"><strong>${msj.email}</strong></div>
-  <div class="col card text-danger">${msj.fecha}</div>
+  <div class="col card text-danger">${msj.date}</div>
   <div class="col card text-success"><em>${msj.mensaje}</em></div>
   `;
     mjsBox.innerHTML = msjHtml;
